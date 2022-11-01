@@ -1,0 +1,94 @@
+.technology h5 {
+
+    /* font-size: 1.75rem; */
+    color: white;
+    letter-spacing: .3rem;
+}
+.technology h5 span {
+    
+    font-weight: 700;
+    opacity: 0.25;
+    margin-right: 1.3rem;
+}
+
+/* Typo */
+.technology h4 {
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 2rem; */
+    /* line-height: 2.3125rem; */
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+.technology h3 {
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 3.5rem; */
+    /* line-height: 4rem; */
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.technology .description {
+
+    font-size: 1.125rem;
+    line-height: 2rem;
+    color: var(--secondary-color);
+}
+
+.technology h6 {
+    color: var(--secondary-color);
+}
+
+.section-buttons {
+
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.3125rem;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.section-buttons button {
+    transition: ease 0.2s;
+    width: 5rem;
+    height: 5rem;
+}
+.section-buttons button:hover, .section-buttons button.active {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+.section-buttons button:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+/* Extra small devices [like Galaxy Fold] */
+@media only screen and (max-width: 300px) 
+{
+    .section-buttons button {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 1280px) 
+{
+    .section-buttons button:not(:last-child) {
+        margin-bottom: 2rem;
+        margin-right: 2rem;
+    }
+}

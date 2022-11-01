@@ -1,0 +1,75 @@
+.crew h5 {
+
+    /* font-size: 1.75rem; */
+    color: white;
+    letter-spacing: .3rem;
+}
+.crew h5 span {
+    
+    font-weight: 700;
+    opacity: 0.25;
+    margin-right: 1.3rem;
+}
+
+/* Typo */
+.crew h4 {
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 2rem; */
+    /* line-height: 2.3125rem; */
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+.crew h3 {
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 3.5rem; */
+    /* line-height: 4rem; */
+    text-transform: uppercase;
+}
+.crew .bio {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    /* or 178% */
+
+    color: var(--secondary-color);
+}
+
+.dots-nav {
+    align-items: center;
+    display: flex;
+    justify-content: left;
+
+    /* Reset styles */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.dots-nav-item {
+    /* Rounded border */
+    border-radius: 9999px;
+    height: 0.75rem;
+    width: 0.75rem;
+
+    /* Inactive dot */
+    background: #FFFFFF;
+    opacity: 0.17;
+
+    /* OPTIONAL: Spacing between dots */
+    margin: 0 1rem 0 0;
+}
+.dots-nav-item.active {
+    background-color: white;
+    opacity: 1;
+}

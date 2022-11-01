@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+
+
+import React from 'react';
+
+// Components:
+// import Navbar from './components/Navbar';
+
+// Import page switcher
+import SwitchPage from './components/SwitchPage';
+
+import { useLocation } from 'react-router-dom';
+
+// const backgroundImg = "";
+// import backgroundImg from './assets/home/background-home-desktop.jpg';
+// let backgroundImg = require('./assets/home/background-home-desktop.jpg');
 
 function App() {
+
+  let location = useLocation().pathname;
+
+  if(location === "/") location = "/home";
+  const divName = "mainDiv " + location.replace("/", "");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      
+      <div className={`${location === '/crew' ? "pb-0" : "pb-80"} ${divName} pt-10 w-full mx-auto relative`}>
+
+        <SwitchPage/>
+        
+      </div>
+    </>
   );
 }
 

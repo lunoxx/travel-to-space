@@ -1,0 +1,138 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    /* COLORS */
+    --base-color: #0B0D17;
+    --secondary-color: #D0D6F9;
+}
+
+body {
+
+    font-family: 'Barlow';
+    font-size: 1.125rem; /* 18px */
+    font-weight: 400;
+    line-height: 2rem; /* 32px */
+    letter-spacing: 0rem;
+    text-align: left;
+    background-color: var(--base-color);
+}
+
+.mainDiv {
+    background: no-repeat center center fixed;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    min-height: 100vh;
+    transition: background-image 0.5s ease-in-out;
+
+    overflow: auto;
+}
+
+#root {
+    height: 100%;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Bellefair';
+    font-size: 150px; /* 9.375rem */
+    font-weight: 400;
+    line-height: 172px; /* 10.75rem */
+    text-transform: uppercase;
+    user-select: none;
+}
+h2 {
+    font-family: 'Bellefair';
+    font-size: 100px; /* 6.25rem */
+    font-weight: 400;
+    line-height: 115px; /* 7.1875rem */
+    user-select: none;
+}
+h3 {
+    font-family: 'Bellefair';
+    font-size: 56px; /* 3.5rem */
+    font-weight: 400;
+    line-height: 64px; /* 4rem*/
+    text-transform: uppercase;
+    user-select: none;
+}
+h4 {
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px; /* 2rem */
+    line-height: 37px; /* 2.3125rem */
+    text-transform: uppercase;
+    user-select: none;
+}
+h5 {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px; /* 1.75rem */
+    line-height: 34px; /* 2.125rem */
+    letter-spacing: 2px; /* .125rem */
+
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    user-select: none;
+}
+h6 {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7008px;
+}
+
+/* Extra small devices (phones, 37.5rem and down) */
+@media only screen and (max-width: 768px) {
+    .mainDiv.home { background-image: url("/src/assets/home/background-home-mobile.jpg"); }
+    .mainDiv.destination { background-image: url("/src/assets/destination/background-destination-mobile.jpg"); }
+    .mainDiv.crew { background-image: url("/src/assets/crew/background-crew-mobile.jpg"); }
+    .mainDiv.technology { background-image: url("/src/assets/technology/background-technology-mobile.jpg"); }
+
+    h1 {
+        font-family: 'Bellefair';
+        font-size: 80px;
+        font-weight: 400;
+        line-height: 6.25rem;
+        text-transform: uppercase;
+        user-select: none;
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    h5 {
+        font-size: 19.2px;
+    }
+}
+
+/* Medium devices (landscape tablets, 48rem and up) */
+@media only screen and (min-width: 48rem) {
+    .mainDiv.home { background-image: url("/src/assets/home/background-home-tablet.jpg"); }
+    .mainDiv.destination { background-image: url("/src/assets/destination/background-destination-tablet.jpg"); }
+    .mainDiv.crew { background-image: url("/src/assets/crew/background-crew-tablet.jpg"); }
+    .mainDiv.technology { background-image: url("/src/assets/technology/background-technology-tablet.jpg"); }
+}
+
+/* Large devices (laptops/desktops, 62rem and up) */
+@media only screen and (min-width: 62rem) {
+    .mainDiv.home { background-image: url("/src/assets/home/background-home-desktop.jpg"); }
+    .mainDiv.destination { background-image: url("/src/assets/destination/background-destination-desktop.jpg"); }
+    .mainDiv.crew { background-image: url("/src/assets/crew/background-crew-desktop.jpg"); }
+    .mainDiv.technology { background-image: url("/src/assets/technology/background-technology-desktop.jpg"); }
+}

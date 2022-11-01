@@ -1,0 +1,23 @@
+:root {
+    /* COLORS */
+    --base-color: #0B0D17;
+    --secondary-color: #D0D6F9;
+}
+
+body {
+    background-color: var(--base-color);
+    
+    background: url("../home/background-home-desktop.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.navbar {
+    color: white s;
+}
+.custom-navbar {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+}

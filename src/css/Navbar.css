@@ -1,0 +1,67 @@
+
+
+.right-nav {
+  background: rgba(255, 255, 255, 0.04);
+  color: white;
+  backdrop-filter: blur(2.5484rem);
+
+  font-family: Barlow Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.1875rem;
+  letter-spacing: .1688rem;
+  text-align: left;
+  user-select: text;
+}
+.nav-line {
+  height: .0625rem;
+
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+
+.nav-items .btn {
+  border:0;
+  transition: 0.15s ease-in-out;
+  /* margin-right: 48px; */
+  min-width: fit-content;
+  overflow: hidden;
+  margin: 0 24px;
+}
+.nav-items .active {
+  border-bottom: .1875rem solid white !important;
+}
+.nav-items .btn:hover {
+  border-bottom: .1875rem solid rgba(255, 255, 255, 0.5);
+}
+
+
+/* Toggleable menu from right - SMT / TAB */
+.menu_phone {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
+
+  transition: .3s ease-in-out;
+}
+
+.menu_phone .nav-items .btn {
+  border:0;
+  transition: 0.15s ease-in-out;
+  /* margin-right: 48px; */
+  min-width: fit-content;
+  overflow: hidden;
+  margin: 0;
+}
+.menu_phone .nav-items .active {
+  border-right: .25rem solid white;
+  border-bottom: 0 !important;
+}
+.menu-icon {
+  color: var(--secondary-color);
+}

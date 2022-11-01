@@ -1,0 +1,45 @@
+
+/* Hero section - text */
+.hero-text-container p {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3125rem;
+    line-height: 2rem;
+    color: var(--secondary-color);
+    margin-top: 1rem;
+    user-select: none;
+}
+
+/* Hover state - hidden */
+.explore-circle {
+
+    outline: 0;
+    outline-color: rgba(255, 255, 255, 0.1);
+
+    height: 17.125rem;
+    width: 17.125rem;
+
+    mix-blend-mode: normal;
+
+    transition: outline 0.2s ease-in-out;
+}
+.explore-circle:hover {
+
+    outline: 5.3125rem solid rgba(255, 255, 255, 0.1);
+}
+
+.explore-circle h5 {
+    color: #0B0D17;
+
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.3125rem;
+    /* identical to box height */
+
+    letter-spacing: .125rem;
+
+    text-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.10);
+}

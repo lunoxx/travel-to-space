@@ -1,0 +1,72 @@
+
+.destination h5 {
+
+    /* font-size: 1.75rem; */
+    color: white;
+    letter-spacing: .3rem;
+}
+.destination h5 span {
+    
+    font-weight: 700;
+    opacity: 0.25;
+    margin-right: 1.3rem;
+}
+
+.destination-info-panel .heroText {
+    font-size: 6.25rem;
+    line-height: 6.25rem;
+    overflow: hidden;
+}
+
+/* right side */
+.nav-items .btn.margin-0 {
+    margin: 0;
+}
+.nav-items {
+    
+    color: var(--secondary-color);
+}
+.nav-items .active {
+    border-bottom: .1875rem solid white !important;
+    color: white;
+}
+.nav-items .btn:hover {
+    border-bottom: .1875rem solid rgba(255, 255, 255, 0.5);
+    color:white
+}
+
+.destination-info-panel p {
+    color: var(--secondary-color);
+    font-size: 1.1875rem;
+}
+
+.destination-info-panel .line {
+    height: .0625rem;
+    background: #383B4B;
+    
+    mix-blend-mode: normal;
+    width: 100%;
+}
+
+.destination-info-panel .footer .title {
+    color:#D0D6F9;
+    text-transform: uppercase;
+        
+    font-size: .8125rem;
+    line-height: 1.0625rem;
+    margin: 1.5rem 0 0.5rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .destination-info-panel .heroText {
+
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+    .destination-info-panel .btn {
+        font-size: 1.25rem;
+        line-height: 1.0625rem;
+    }
+}
